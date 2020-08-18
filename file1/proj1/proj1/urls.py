@@ -19,6 +19,8 @@ from mypro import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('myhome/', views.home,name='about'),
+    path('myhome/', views.home,name='home'),
+    path('aboutme/', views.home,name='aboutme'),
+    
     path('hobbies/', views.home,name='hobbies'),
 ]

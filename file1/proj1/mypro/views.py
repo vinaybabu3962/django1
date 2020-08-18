@@ -6,4 +6,4 @@ def home(requests):
 def aboutme(requests):
     return HttpResponse('<h1>Iam Vinay from Vasavi IT b</h1>')
 def hobbies(requests):
-    return HttpResponse('<h2 style="color:red"> reading newspapers, listening music</h2>')
+    return HttpResponse('<h2> reading newspapers, listening music</h2>')

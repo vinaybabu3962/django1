@@ -20,7 +20,7 @@ from mypro import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('myhome/', views.home,name='home'),
-    path('aboutme/', views.home,name='aboutme'),
+    path('aboutme/', views.aboutme,name='aboutme'),
     
-    path('hobbies/', views.home,name='hobbies'),
+    path('hobbies/', views.hobbies,name='hobbies'),
 ]

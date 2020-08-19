@@ -16,11 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from mypro import views
+from django.conf.urls import include, url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('myhome/', views.home,name='home'),
-    path('aboutme/', views.aboutme,name='aboutme'),
-    
-    path('hobbies/', views.hobbies,name='hobbies'),
+    path('aboutus/', views.aboutus,name='aboutus'),
+    path('', views.aboutus,name='aboutus'),
+    url(r'blogs.*/', include('blogs.urls')),
+    url(r'mycontacts.*/',include('mycontacts.urls'))
 ]
